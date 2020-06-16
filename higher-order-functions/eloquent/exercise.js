@@ -3,9 +3,14 @@ let arrays = [[1, 2, 3], [4, 5], [6]];
 
 // Your code here.
 // → [1, 2, 3, 4, 5, 6]
+arrays.reduce((acc, cv) => {
+  return acc.concat(cv);
+});
+// console.log(arrays.flat());
 
 // Challenge 2. Your own loop
 // Your code here.
+function loop(value,)
 
 loop(3, n => n > 0, n => n - 1, console.log);
 // → 3
@@ -15,6 +20,18 @@ loop(3, n => n > 0, n => n - 1, console.log);
 // Challenge 3. Everything
 function every(array, test) {
   // Your code here.
+  let counter = 0;
+
+ for(let i=0; i< array.length ; i++){
+  if(test(array[i])){
+    counter++;
+    };
+   
+ }
+ return (counter === array.length) ?  'true' :  'false';
+
+
+  // array.every(test);
 }
 
 console.log(every([1, 3, 5], n => n < 10));

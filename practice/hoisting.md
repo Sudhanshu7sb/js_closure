@@ -5,19 +5,22 @@
 ```js
 console.log(animal);
 var animal = "monkey";
-// Output or Error Message
+// Output or Error Message 
+//valid-undefined
 ```
 
 ```js
 console.log(animal);
 let animal = "monkey";
 // Output or Error Message
+// valid -undefined
 ```
 
 ```js
 console.log(animal);
 const animal = "monkey";
 // Output or Error Message
+//valid-undefined
 ```
 
 ```js
@@ -26,6 +29,7 @@ function sayHello(msg) {
 }
 sayHello("Hey Everyone");
 // Output or Error Message
+// "Hey Everyone" in alert
 ```
 
 ```js
@@ -34,6 +38,7 @@ function sayHello(msg) {
   alert(msg);
 }
 // Output or Error Message
+//"Hey Everyone" in alert
 ```
 
 ```js
@@ -42,6 +47,7 @@ var sayHello = msg => {
   alert(msg);
 };
 // Output or Error Message
+//"Hey Everyone" in alert
 ```
 
 ```js
@@ -49,4 +55,5 @@ sayHello("Hey Everyone");
 let sayHello = msg => {
   alert(msg);
 };
+// error sayHello is not defined
 ```
